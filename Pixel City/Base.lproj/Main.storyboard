@@ -47,7 +47,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLE-JD-eoa">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <rect key="frame" x="309" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RaA-pZ-vuW"/>
                                     <constraint firstAttribute="height" constant="50" id="UVx-wr-Vpf"/>
@@ -58,8 +58,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfW-cY-kMi">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Fsu-ZO-WHJ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,12 +70,12 @@
                             <constraint firstItem="Qgn-pL-dBH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1He-tl-PkY"/>
                             <constraint firstItem="qfW-cY-kMi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2dy-F0-fIs"/>
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="31a-5d-l0a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vLE-JD-eoa" secondAttribute="bottom" constant="20" id="7fw-m6-pee"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLE-JD-eoa" secondAttribute="trailing" constant="16" id="8IE-ol-qd5"/>
+                            <constraint firstAttribute="bottom" secondItem="qfW-cY-kMi" secondAttribute="bottom" id="Bd0-h7-7xk"/>
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JNX-YZ-GVi"/>
+                            <constraint firstItem="qfW-cY-kMi" firstAttribute="top" secondItem="vLE-JD-eoa" secondAttribute="bottom" constant="20" id="Kmy-u3-3vp"/>
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NJ1-I0-Hqn"/>
                             <constraint firstAttribute="trailing" secondItem="qfW-cY-kMi" secondAttribute="trailing" id="NeH-3w-tdX"/>
-                            <constraint firstItem="qfW-cY-kMi" firstAttribute="top" secondItem="SnM-Ji-1e6" secondAttribute="bottom" id="Oi2-0I-5w8"/>
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qql-7t-DKZ"/>
                             <constraint firstItem="qfW-cY-kMi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aGx-Kb-C7W"/>
                             <constraint firstItem="Qgn-pL-dBH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cgN-C3-IRY"/>
@@ -82,6 +85,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="SnM-Ji-1e6" id="Fh9-bv-Ebz"/>
+                        <outlet property="pullUpView" destination="qfW-cY-kMi" id="cdi-Ze-745"/>
+                        <outlet property="pullUpViewHeightContraint" destination="Fsu-ZO-WHJ" id="kmm-2g-3lv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
