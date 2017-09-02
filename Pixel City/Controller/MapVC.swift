@@ -134,10 +134,13 @@ extension MapVC: MKMapViewDelegate {
         addSwipe()
         addSpinner()
         addProgressLabel()
+        
         let touchPoint = sender.location(in: mapView)
         let touchCoordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
         let annotation = DroppablePin(coordinate: touchCoordinate, identifier: "droppablePin")
         mapView.addAnnotation(annotation)
+        
+        print(FLICKR_URL(forAPIKey: API_KEY, withAnnonation: annotation, numberOfPhotos: 40))
         
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(touchCoordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
