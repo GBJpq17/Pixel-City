@@ -72,14 +72,14 @@
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="31a-5d-l0a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLE-JD-eoa" secondAttribute="trailing" constant="16" id="8IE-ol-qd5"/>
                             <constraint firstAttribute="bottom" secondItem="qfW-cY-kMi" secondAttribute="bottom" id="Bd0-h7-7xk"/>
-                            <constraint firstItem="SnM-Ji-1e6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JNX-YZ-GVi"/>
                             <constraint firstItem="qfW-cY-kMi" firstAttribute="top" secondItem="vLE-JD-eoa" secondAttribute="bottom" constant="20" id="Kmy-u3-3vp"/>
-                            <constraint firstItem="SnM-Ji-1e6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NJ1-I0-Hqn"/>
                             <constraint firstAttribute="trailing" secondItem="qfW-cY-kMi" secondAttribute="trailing" id="NeH-3w-tdX"/>
                             <constraint firstItem="SnM-Ji-1e6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qql-7t-DKZ"/>
                             <constraint firstItem="qfW-cY-kMi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aGx-Kb-C7W"/>
+                            <constraint firstItem="SnM-Ji-1e6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cIr-kG-dEM"/>
                             <constraint firstItem="Qgn-pL-dBH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cgN-C3-IRY"/>
                             <constraint firstItem="Qgn-pL-dBH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pZH-L1-NPz"/>
+                            <constraint firstItem="SnM-Ji-1e6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wja-t6-63J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
